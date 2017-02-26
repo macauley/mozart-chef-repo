@@ -1,0 +1,20 @@
+{
+   "name": "dev",
+   "description": "Interactive development role.",
+   "json_class": "Chef::Role",
+   "default_attributes": {
+     "chef_client": {
+       "interval": 86400,
+       "splay": 300
+     }
+   },
+   "override_attributes": {
+   },
+   "chef_type": "role",
+   "run_list": ["recipe[chef-client::default]",
+                "recipe[chef-client::delete_validation]",
+                "recipe[oh-my-zsh::default]"
+   ],
+   "env_run_lists": {
+   }
+}
