@@ -3,10 +3,11 @@
    "description": "Interactive development role.",
    "json_class": "Chef::Role",
    "default_attributes": {
-     "chef_client": {
-       "interval": 86400,
-       "splay": 300
-     }
+       "chef_client": {
+           "interval": 86400,
+           "splay": 300
+       },
+       "users": ["macauley"]
    },
    "override_attributes": {
    },
@@ -14,11 +15,11 @@
    "run_list": ["recipe[chef-client::default]",
                 "recipe[chef-client::delete_validation]",
                 "recipe[user::data_bag]",
-                "recipe[git]",
-                "recipe[perforce]",
-                "recipe[emacs]"
+                "recipe[oh_my_zsh::data_bag]",
+                "recipe[git::default]",
+                "recipe[perforce::default]",
+                "recipe[emacs::default]"
    ],
    "env_run_lists": {
    }
 }
-
