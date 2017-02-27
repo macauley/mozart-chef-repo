@@ -13,8 +13,12 @@
    "chef_type": "role",
    "run_list": ["recipe[chef-client::default]",
                 "recipe[chef-client::delete_validation]",
-                "recipe[oh-my-zsh::default]"
+                "recipe[user::data_bag]",
+                "recipe[git]",
+                "recipe[perforce]",
+                "recipe[emacs]"
    ],
    "env_run_lists": {
    }
 }
+

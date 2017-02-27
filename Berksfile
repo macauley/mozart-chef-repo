@@ -1,4 +1,7 @@
 source 'https://supermarket.chef.io'
 cookbook 'chef-client'
 cookbook 'emacs'
-cookbook 'oh-my-zsh'
+cookbook 'oh_my_zsh'
+cookbook 'git'
+cookbook 'perforce'
+cookbook 'user'
