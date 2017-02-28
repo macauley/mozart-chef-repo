@@ -12,9 +12,7 @@
    "override_attributes": {
    },
    "chef_type": "role",
-   "run_list": ["recipe[chef-client::default]",
-                "recipe[chef-client::delete_validation]",
-                "recipe[user::data_bag]",
+   "run_list": ["recipe[user::data_bag]",
                 "recipe[oh_my_zsh::data_bag]",
                 "recipe[git::default]",
                 "recipe[perforce::default]",
