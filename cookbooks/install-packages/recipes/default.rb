@@ -9,6 +9,9 @@ apt_update 'Update the apt cache daily' do
   action :periodic
 end
 
+# Install zsh
+package 'zsh'
+
 # Install python
 package 'python'
 
