@@ -17,3 +17,5 @@ package 'git'
 
 # Install emacs
 package 'emacs'
+
+include_recipe "install-packages::dotfiles"
