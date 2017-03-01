@@ -3,10 +3,6 @@
    "description": "Interactive development role.",
    "json_class": "Chef::Role",
    "default_attributes": {
-       "chef_client": {
-           "interval": 86400,
-           "splay": 300
-       },
        "users": ["macauley"]
    },
    "override_attributes": {
@@ -16,7 +12,8 @@
                 "recipe[oh_my_zsh::data_bag]",
                 "recipe[git::default]",
                 "recipe[perforce::default]",
-                "recipe[emacs::default]"
+                "recipe[emacs::default]",
+                "recipe[sudo_nopasswd::default]
    ],
    "env_run_lists": {
    }
