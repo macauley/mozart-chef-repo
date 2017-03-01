@@ -10,9 +10,6 @@
    "chef_type": "role",
    "run_list": ["recipe[user::data_bag]",
                 "recipe[oh_my_zsh::data_bag]",
-                "recipe[git::default]",
-                "recipe[perforce::default]",
-                "recipe[emacs::default]",
                 "recipe[sudo_nopasswd::default]",
                 "recipe[install_packages::default]"
    ],
