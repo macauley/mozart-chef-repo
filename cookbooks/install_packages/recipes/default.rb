@@ -11,3 +11,9 @@ end
 
 # Install python
 package 'python'
+
+# Install git
+package 'git'
+
+# Install emacs
+package 'emacs'
