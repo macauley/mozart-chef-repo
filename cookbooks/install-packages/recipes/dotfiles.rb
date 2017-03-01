@@ -4,6 +4,14 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
+# Install oh-my-zsh
+git '/home/macauley/.oh-my-zsh' do
+  repository 'git://github.com/robbyrussell/oh-my-zsh.git'
+  user 'macauley'
+  action :sync
+end
+
+# Install dotfiles
 git '/home/macauley/dotfiles' do
   repository 'https://github.com/macauley/dotfiles.git'
   revision 'master'

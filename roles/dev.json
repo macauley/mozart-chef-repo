@@ -9,7 +9,6 @@
    },
    "chef_type": "role",
    "run_list": ["recipe[user::data_bag]",
-                "recipe[oh_my_zsh::data_bag]",
                 "recipe[sudo-nopasswd::default]",
                 "recipe[install-packages::default]"
    ],
