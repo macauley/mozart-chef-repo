@@ -3,12 +3,11 @@
    "description": "Interactive development role.",
    "json_class": "Chef::Role",
    "default_attributes": {
-       "users": ["macauley"]
    },
    "override_attributes": {
    },
    "chef_type": "role",
-   "run_list": ["recipe[user::data_bag]",
+   "run_list": ["recipe[add-current-user::default]",
                 "recipe[sudo-nopasswd::default]",
                 "recipe[install-packages::default]"
    ],
