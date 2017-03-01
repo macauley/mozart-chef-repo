@@ -1,4 +1,4 @@
-name 'sudo_nopasswd'
+name 'sudo-nopasswd'
 maintainer 'Eric Macauley'
 maintainer_email 'chef@eric.macauley.me'
 license 'all_rights'
