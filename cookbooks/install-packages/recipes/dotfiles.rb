@@ -13,7 +13,7 @@ end
 
 execute 'install_dotfiles' do
   cwd '/home/macauley/dotfiles'
-  command 'install'
+  command './install'
   user 'macauley'
   live_stream true
 end
