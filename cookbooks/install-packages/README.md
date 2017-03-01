@@ -1,4 +1,4 @@
-# install_packages
+# install-packages
 
 TODO: Enter the cookbook description here.
 

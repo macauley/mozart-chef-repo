@@ -1,9 +1,9 @@
-name 'install_packages'
+name 'install-packages'
 maintainer 'Eric Macauley'
 maintainer_email 'chef@eric.macauley.me'
 license 'all_rights'
 description 'Installs some packages via apt-get'
-long_description 'Installs/Configures install_packages'
+long_description 'Installs/Configures install-packages'
 version '0.1.0'
 
 # The `issues_url` points to the location where issues for this cookbook are
