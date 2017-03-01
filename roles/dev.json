@@ -10,8 +10,8 @@
    "chef_type": "role",
    "run_list": ["recipe[user::data_bag]",
                 "recipe[oh_my_zsh::data_bag]",
-                "recipe[sudo_nopasswd::default]",
-                "recipe[install_packages::default]"
+                "recipe[sudo-nopasswd::default]",
+                "recipe[install-packages::default]"
    ],
    "env_run_lists": {
    }
