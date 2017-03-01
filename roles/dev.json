@@ -14,7 +14,7 @@
                 "recipe[perforce::default]",
                 "recipe[emacs::default]",
                 "recipe[sudo_nopasswd::default]",
-                "recipe[poise-python::default]"
+                "recipe[install_packages::default]"
    ],
    "env_run_lists": {
    }
