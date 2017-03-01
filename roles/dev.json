@@ -13,7 +13,7 @@
                 "recipe[git::default]",
                 "recipe[perforce::default]",
                 "recipe[emacs::default]",
-                "recipe[sudo_nopasswd::default]
+                "recipe[sudo_nopasswd::default]"
    ],
    "env_run_lists": {
    }
