@@ -16,4 +16,5 @@ execute 'install_dotfiles' do
   command './install'
   user 'macauley'
   live_stream true
+  environment ({'HOME' => '/home/macauley'})
 end
