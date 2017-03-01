@@ -20,7 +20,7 @@ git '/home/' + ENV['USER_TO_ADD'] + '/dotfiles' do
 end
 
 execute 'install_dotfiles' do
-  cwd '/home/' + ENV['USER_TO_ADD'] '/dotfiles'
+  cwd '/home/' + ENV['USER_TO_ADD'] + '/dotfiles'
   command './install'
   user ENV['USER_TO_ADD']
   live_stream true
