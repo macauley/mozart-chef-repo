@@ -10,3 +10,8 @@ git '/home/macauley/dotfiles' do
   user 'macauley'
   action :sync
 end
+
+execute 'install_dotfiles' do
+  cwd '/home/macauley/dotfiles'
+  command './install'
+end
