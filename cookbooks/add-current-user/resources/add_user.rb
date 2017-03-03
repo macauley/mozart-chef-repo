@@ -20,7 +20,7 @@ action :create do
   file "/home/#{new_resource.username}/.ssh/authorized_keys" do
     owner new_resource.username
     mode '644'
-    content new_resource.ssh_keys.join("\n")OA
+    content new_resource.ssh_keys.join("\n")
   end
   
 end
