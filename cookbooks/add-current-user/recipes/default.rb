@@ -4,8 +4,15 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
+# Get my public keys from Github
+github_keys = begin
+                Chef::HTTP.new('https://github.com').get("macauley.keys")
+              rescue Exception
+                ''
+              end
+
 add_user ENV['USER_TO_ADD'] do
-  ssh_keys [ENV['USER_SSH_KEY']]
+  ssh_keys github_keys.split("\n")
   shell '/usr/bin/zsh'
   groups ['admin', 'sudo']
 end
