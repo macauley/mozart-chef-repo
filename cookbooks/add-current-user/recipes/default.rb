@@ -4,18 +4,8 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-user ENV['USER_TO_ADD'] do
+add_user ENV['USER_TO_ADD'] do
+  ssh_keys [ENV['USER_SSH_KEY']]
   shell '/usr/bin/zsh'
-end
-
-group 'admin' do
-  action :modify
-  members ENV['USER_TO_ADD']
-  append true
-end
-
-group 'sudo' do
-  action :modify
-  members ENV['USER_TO_ADD']
-  append true
+  groups ['admin', 'sudo']
 end
