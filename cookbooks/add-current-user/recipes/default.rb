@@ -11,6 +11,7 @@ github_keys = begin
                 ''
               end
 
+# I like ssh, and add my to the admin and sudo groups
 add_user ENV['USER_TO_ADD'] do
   ssh_keys github_keys.split("\n")
   shell '/usr/bin/zsh'

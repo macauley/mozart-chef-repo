@@ -1,4 +1,4 @@
 # sudo_nopasswd
 
-TODO: Enter the cookbook description here.
+Set admin group to not require a password when running sudo.
 

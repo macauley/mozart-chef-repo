@@ -1,4 +1,4 @@
 # install-packages
 
-TODO: Enter the cookbook description here.
+Install the packages I like, clone oh-my-zsh, clone my dotfiles repo, and install the dotfiles.
 
